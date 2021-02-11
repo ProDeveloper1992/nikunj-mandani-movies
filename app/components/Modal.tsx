@@ -47,7 +47,7 @@ interface ModalProps {
 function titleCase(value: string): string {
     let title = '';
     let shouldUpcase = true;
-    for (let i = 0; i < value.length; i++) {
+    for (let i = 0; i < value?.length; i++) {
         if (shouldUpcase) {
             title += value[i].toUpperCase();
             shouldUpcase = false;
